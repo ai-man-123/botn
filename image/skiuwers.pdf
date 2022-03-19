@@ -1,0 +1,103 @@
+case prefix+ 'debug':
+if (isBanned) return reply(mess.banned)
+if (!rip.key.fromMe && !isRegistered) return verify(altar)
+var teks = skiuwers.prepareMessageFromContent(m.chat, ({
+templateMessage: {
+hydratedTemplate: {
+hydratedContentText: `
+⊙─❲ ITS ME ARIP ❳
+│
+└⊙ ${setting.wb}
+│
+└⊙ ${setting.gt}
+│
+└⊙ ${setting.yt} \n`,
+locationMessage: { jpegThumbnail: fs.readFileSync('./image/fake.jpg') },
+hydratedFooterText: `${setting.fake} `,
+hydratedButtons: [{ 
+urlButton: {
+displayText: 'WEBSITE',
+url: 'https://itsmearip.github.io'
+}
+}, {
+urlButton: {
+displayText: 'YOUTUBE',
+url: 'https://youtube.com/c/itsmearip'
+}
+}, {
+quickReplyButton: {
+displayText: 'INFO',
+id: 'ping'
+}
+}, {
+quickReplyButton: {
+displayText: 'OWNER',
+id: 'owner'
+}  
+}, {
+quickReplyButton: {
+displayText: 'SCRIPT',
+id: 'sc'
+}
+}]
+}
+}
+}), { quoted: rip })
+root.relayWAMessage(teks)
+break
+
+
+
+{
+"prefix": ".",
+"limit": "1000",
+"gamewaktu": 60,
+"lolkey": "47gjh68hjk0643GkLH",
+"xteamkey": "1479b3ed05807e26",
+"zekskey": "k0HaixxdxcPVPCcnBBR00VLlKYu",
+
+"botNumber": "6287776101997",
+"ownerNumber": "6287776101997",
+"ownerNumberr": "+6287776101997",
+
+"wa": "wa.me/6287776101997",
+"pulsa":"6287776101997",
+"gopay":"6287776101997",
+"ovo":"6287776101997",
+"dana":"6287776101997",
+"donate": "6287776101997",
+
+"cr": "© Creator BotWea",
+"wb": "https://itsmearip.github.io",
+"yt": "https://youtube.com/c/ItsMeArip",
+"gt": "https://github.com/ItsMeArip",
+"ig": "https://instagram.com/arip404_",
+"fakereply":"https://itsmearip.github.io",
+"grub":"https://chat.whatsapp.com/KaZAmu5laH85QSQDUD5M2p",
+
+"botname":"「 NOT FOUND ͘⁴̅⁰͍⁴̵〆 」",
+"ownername": "Arip͘⁴̅⁰͍⁴̵〆",
+"packname01": "Follow Instagram",
+"packname02": "Arip404_",
+"img":"https://k.top4top.io/p_2001zgi471.jpg",
+"thumb":"thumbnail.jpg",
+"fakethumb":"fake.jpg",
+"fake": "© All Creator BotWea || Arip͘⁴̅⁰͍⁴̵〆",
+
+"menusimple" : true, 
+"single" : true, 
+"antical" : true, 
+"antitoxic" : false, 
+"antitags" : false, 
+"banChats" : true, 
+"offline" : false, 
+"multi" : false, 
+"nopref" : false, 
+"antidel" : false, 
+"readGc" : false, 
+"readPc" : false, 
+"autoketik" : false, 
+"autorekam" : true, 
+"welcome" : false, 
+"autobio" : false
+}
